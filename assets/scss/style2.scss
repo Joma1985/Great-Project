@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  %flex-between{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @mixin hover-elements ($hover-prop, $hover-color, $hover-prop2, $hover-color2) {
+    transition: 0.3s all linear;
+
+    &:hover {
+        #{$hover-prop}: $hover-color;
+        #{$hover-prop2}: $hover-color2;
+    }
+  }
+
+  $color1: #ffffff;
+  $color2: rgba(7, 7, 7, 0.34);
+  $color3: #d1a954;
+
+  ul li {
+    list-style: none;
+  }
+
+
+  img{
+      object-fit: cover; 
+  } 
+  a{
+      color: $color1;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
